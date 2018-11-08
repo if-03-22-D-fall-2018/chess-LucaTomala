@@ -10,7 +10,7 @@
    enum PieceType type;
  };
  struct ChessSquare{
-   enum PieceType Nopiece;
+   enum PieceType NoPiece;
    bool is_occupied;
    struct ChessPiece piece;
  };
@@ -19,7 +19,7 @@
  typedef int Rank;
  typedef unsigned char File;
 
- bool setup_chess_board(ChessBoard chess_board);
+ void setup_chess_board(ChessBoard chess_board);
  void init_chess_board(ChessBoard chess_board);
 
  struct ChessSquare* get_square(ChessBoard chess_board,File file,Rank rank);
