@@ -26,7 +26,7 @@
  struct ChessPiece get_piece(ChessBoard chess_board, File a, Rank rank);
 
  bool is_square_occupied(ChessBoard chess_board,File file,Rank rank);
- bool add_piece(ChessBoard chess_board,File a,Rank rank, ChessPiece black_rook);
+ bool add_piece(ChessBoard chess_board,File a,Rank rank,struct ChessPiece piece);
  bool remove_piece(ChessBoard chess_board, File file, Rank rank);
  bool is_piece(struct ChessPiece piece, enum Color color, enum PieceType type);
 
